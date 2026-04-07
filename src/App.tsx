@@ -32,7 +32,7 @@ function Home() {
 function App() {
   return (
     <ReactLenis root>
-      <BrowserRouter>
+      <BrowserRouter basename="/multisport/">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/obozy" element={<CampsPage />} />
