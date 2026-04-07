@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FiArrowRight, FiPhone } from 'react-icons/fi';
+import { FiArrowRight } from 'react-icons/fi';
 import { heroData, contactData } from '../data/content';
 
 export default function Hero() {
@@ -40,7 +40,7 @@ export default function Hero() {
               {heroData.subheadline}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-start">
               <motion.a
                 href={`tel:${contactData.phone.replace(/\s/g, '')}`}
                 className="inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all neon-glow"
@@ -49,15 +49,6 @@ export default function Hero() {
               >
                 {heroData.cta}
                 <FiArrowRight className="w-5 h-5" />
-              </motion.a>
-              <motion.a
-                href={`tel:${contactData.phone.replace(/\s/g, '')}`}
-                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-700 px-8 py-4 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <FiPhone className="w-5 h-5" />
-                Zadzwoń
               </motion.a>
             </div>
           </motion.div>
