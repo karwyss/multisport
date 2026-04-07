@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiArrowLeft, FiArrowRight, FiImage } from 'react-icons/fi';
 import { Lightbox } from './Lightbox';
+import { contactData } from '../data/content';
 
 const campImages = [
   'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80',
@@ -80,7 +81,7 @@ export default function CampsPage() {
               </span>
             </a>
             <a
-              href="/#cta"
+              href={`tel:${contactData.phone.replace(/\s/g, '')}`}
               className="bg-cyan-400 hover:bg-cyan-300 text-blue-900 px-5 py-2.5 rounded-full font-medium transition-all"
             >
               Zapisz się
