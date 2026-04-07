@@ -57,7 +57,7 @@ function App() {
         <HashRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/#/obozy" element={<CampsPageSEO />} />
+            <Route path="/obozy" element={<CampsPageSEO />} />
           </Routes>
         </HashRouter>
       </ReactLenis>
