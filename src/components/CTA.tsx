@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
-import { ctaData } from '../data/content';
+import { ctaData, contactData } from '../data/content';
 
 export default function CTA() {
   return (
@@ -24,7 +24,7 @@ export default function CTA() {
             {ctaData.subtitle}
           </p>
           <motion.a
-            href="tel:+48123456789"
+            href={`tel:${contactData.phone.replace(/\s/g, '')}`}
             className="inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-10 py-5 rounded-full font-semibold text-lg transition-all neon-glow"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
