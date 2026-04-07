@@ -120,8 +120,8 @@ export const popupData = {
 };
 
 export const contactData = {
-  phone: '+48 123 456 789',
-  email: 'kontakt@multisport-wadowice.pl',
+  phone: '+48 791 261 113',
+  email: 'multisportwadowice@gmail.com',
   address: 'Wadowice, Małopolskie',
   hours: 'Pon-Pt: 8:00 - 20:00',
 };
