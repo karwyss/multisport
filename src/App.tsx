@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ReactLenis } from 'lenis/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -32,12 +32,13 @@ function Home() {
 function App() {
   return (
     <ReactLenis root>
-      <BrowserRouter basename="/multisport/">
+      <HashRouter> 
+        {/* W HashRouterze NIE wpisujemy basename! */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/obozy" element={<CampsPage />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ReactLenis>
   );
 }
