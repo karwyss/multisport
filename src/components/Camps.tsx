@@ -133,7 +133,7 @@ export default function Camps() {
           className="flex flex-col sm:flex-row justify-center items-center gap-4"
         >
           <motion.a
-            href="/obozy"
+            href="#/obozy"
             className="inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all neon-glow"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
