@@ -47,16 +47,16 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4">
             <motion.a
               href={`tel:${contactData.phone.replace(/\s/g, '')}`}
-              className="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-full font-medium transition-all neon-glow"
+              // className="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-full font-medium transition-all neon-glow"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Zapisz się
             </motion.a>
-          </div> */}
+          </div>
 
           <button
             className="md:hidden p-2"
