@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiX, FiArrowRight } from 'react-icons/fi';
-import { offerData } from '../data/content';
+import { offerData, contactData } from '../data/content';
 
 export default function Offer() {
   const [selectedOffer, setSelectedOffer] = useState<typeof offerData[0] | null>(null);
@@ -83,7 +83,7 @@ export default function Offer() {
                 ))}
               </ul>
               <a
-                href="#cta"
+                href={`tel:${contactData.phone.replace(/\s/g, '')}`}
                 className="block w-full text-center bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-full font-semibold transition-all"
                 onClick={() => setSelectedOffer(null)}
               >

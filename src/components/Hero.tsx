@@ -42,7 +42,7 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <motion.a
-                href="#cta"
+                href={`tel:${contactData.phone.replace(/\s/g, '')}`}
                 className="inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all neon-glow"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -51,7 +51,7 @@ export default function Hero() {
                 <FiArrowRight className="w-5 h-5" />
               </motion.a>
               <motion.a
-                href={`tel:${contactData.phone}`}
+                href={`tel:${contactData.phone.replace(/\s/g, '')}`}
                 className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-700 px-8 py-4 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

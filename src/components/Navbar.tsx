@@ -49,14 +49,14 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-4">
             <a
-              href={`tel:${contactData.phone}`}
+              href={`tel:${contactData.phone.replace(/\s/g, '')}`}
               className="flex items-center gap-2 text-slate-700 hover:text-blue-500 transition-colors"
             >
               <FiPhone className="w-4 h-4" />
               <span className="text-sm font-medium">{contactData.phone}</span>
             </a>
             <motion.a
-              href="#cta"
+              href={`tel:${contactData.phone.replace(/\s/g, '')}`}
               className="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-full font-medium transition-all neon-glow"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -98,14 +98,14 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href={`tel:${contactData.phone}`}
+                href={`tel:${contactData.phone.replace(/\s/g, '')}`}
                 className="flex items-center gap-2 text-slate-700 py-2"
               >
                 <FiPhone className="w-4 h-4" />
                 <span>{contactData.phone}</span>
               </a>
               <a
-                href="#cta"
+                href={`tel:${contactData.phone.replace(/\s/g, '')}`}
                 className="block bg-blue-500 text-white text-center px-5 py-3 rounded-full font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

@@ -41,7 +41,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
                 <FiPhone className="w-5 h-5 text-blue-400" />
-                <a href={`tel:${contactData.phone}`} className="hover:text-white transition-colors">
+                <a href={`tel:${contactData.phone.replace(/\s/g, '')}`} className="hover:text-white transition-colors">
                   {contactData.phone}
                 </a>
               </li>
